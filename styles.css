@@ -158,6 +158,7 @@ section {
 
     .portfolio-content img { width: 100%; }
     .portfolio-content { display: block; }
+    .portfolio-list{ display: block; }
 }
 
 .skill-list {
@@ -201,8 +202,7 @@ section {
 .portfolio-content img{
     width: 45%;
     margin: 10px;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 
 .portfolio-content p {
