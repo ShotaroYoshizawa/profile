@@ -171,6 +171,11 @@ section {
     margin: 5px;
 }
 
+.project img{
+    width: 90%;
+    margin: 10px;
+}
+
 .skill-list {
     list-style-type: none;
     padding: 0;
