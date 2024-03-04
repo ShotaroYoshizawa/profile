@@ -155,8 +155,19 @@ section {
     .content-list { width: 100%; }
     #home a { width: 100%; }
     h2 { margin-top: 200px; }
+    .portfolio-content img { width: 100%; }
 }
 
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-list li {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
 .project {
     text-align: left;
@@ -171,15 +182,29 @@ section {
     margin: 5px;
 }
 
-.skill-list {
-    list-style-type: none;
-    padding: 0;
+.portfolio-list {
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    margin: 10px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
 }
 
-.skill-list li {
-    margin: 10px 0;
-    padding: 10px 20px;
-    border-radius: 5px;
+.portfolio-content {
+    margin: 5px;
+    display: flex;
+}
+
+.portfolio-content img{
+    width: 50%;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+
+.portfolio-content p {
+    margin: 5px;
 }
 
 .other-content img{
