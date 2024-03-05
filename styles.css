@@ -120,26 +120,23 @@ li {
 }
 
 /* ↓ スライドの外枠 */
-.slide-wrapper {
+.slide-wrapper { 
     width: 80%;
     height: 100%;
     position: relative;
-    overflow: hidden;
-    /*はみ出したスライドを隠す */
+    overflow: hidden; /*はみ出したスライドを隠す */
     margin: 0 auto;
 }
 
 /*  ↓ スライド（コンテンツ） */
-.slide {
-    /*スライド全体 */
+.slide { /*スライド全体 */
     width: 400%;
     height: 100%;
     display: flex;
     transition: all 0.5s;
 }
 
-.slide div {
-    /* スライド */
+.slide div { /* スライド */
     width: 25%;
     height: 100%;
     font-size: 16px;
@@ -150,11 +147,15 @@ li {
     display: inline-block;
 }
 
-.slide img {
+.slide a :hover {
+	opacity:0.5;
+	transition:0.3s;
+}
+
+.slide a {
     height: auto;
     width: auto;
 }
-
 
 /* スライドさせるために必要なクラス */
 .slide1 {
@@ -202,6 +203,14 @@ li {
     transform: rotate(-135deg) translateY(-50%);
 }
 
+.next:hover {
+    background-color: gray;
+}
+
+.prev:hover {
+    background-color: gray;
+}
+
 /* ↓ インジケーター */
 .indicator {
     width: 100%;
@@ -227,7 +236,6 @@ li {
 .indicator li:first-of-type {
     background-color: #000;
 }
-
 /*スクロール↑*/
 
 #about h3 {
@@ -289,11 +297,7 @@ li {
     #home a {
         width: 100%;
     }
-    .slide-wrapper {
-        width: 100%;
-    }
 }
-
 
 .project {
     text-align: left;
