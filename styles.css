@@ -150,6 +150,12 @@ li {
     display: inline-block;
 }
 
+.slide img {
+    height: auto;
+    width: auto;
+}
+
+
 /* スライドさせるために必要なクラス */
 .slide1 {
     transform: translateX(0);
@@ -199,13 +205,13 @@ li {
 /* ↓ インジケーター */
 .indicator {
     width: 100%;
-
     bottom: 20px;
     display: flex;
     column-gap: 18px;
     z-index: 10;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .indicator li {
