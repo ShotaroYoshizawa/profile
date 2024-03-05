@@ -11,23 +11,25 @@ body {
 }
 
 header {
-    position: fixed;
     width: 100%;
     background-color: #333333;
     color: #fff;
     padding: 10px 0 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header h1 {
     margin: 0 auto 10px auto;
 }
 
-header a{
+header a {
     color: #fff;
     text-decoration: none;
 }
 
-header li a:hover{
+header li a:hover {
     color: #f4f4f4;
     background-color: gray;
     border-radius: 5px;
@@ -96,7 +98,7 @@ nav ul li a {
 */
 
 h2 {
-    margin-top: 130px;
+    margin: 10px;
 }
 
 section {
@@ -104,11 +106,134 @@ section {
     text-align: center;
 }
 
+/*スクロール↓*/
+
+*,
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* ↓ スライドの外枠 */
+.slide-wrapper {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /*はみ出したスライドを隠す */
+    margin: 0 auto;
+}
+
+/*  ↓ スライド（コンテンツ） */
+.slide {
+    /*スライド全体 */
+    width: 400%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.slide div {
+    /* スライド */
+    width: 25%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+/* スライドさせるために必要なクラス */
+.slide1 {
+    transform: translateX(0);
+}
+
+.slide2 {
+    transform: translateX(-25%);
+}
+
+.slide3 {
+    transform: translateX(-50%);
+}
+
+.slide4 {
+    transform: translateX(-75%);
+}
+
+/* ↓ 左右のボタン */
+.next {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    -webkit-transform: rotate(45deg) translateY(50%);
+    transform: rotate(45deg) translateY(50%);
+}
+
+.prev {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 25px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+/* ↓ インジケーター */
+.indicator {
+    width: 100%;
+
+    bottom: 20px;
+    display: flex;
+    column-gap: 18px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    list-style: none;
+    background-color: #fff;
+    border: 2px #000 solid;
+    cursor: pointer;
+}
+
+.indicator li:first-of-type {
+    background-color: #000;
+}
+
+/*スクロール↑*/
+
 #about h3 {
     padding: 30px 0 0px 0;
 }
 
-.profile-picture img{
+#portfolio h3 {
+    padding-top: 180px;
+    margin-top:-180px;
+}
+
+.profile-picture img {
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -122,7 +247,7 @@ section {
 }
 
 #home a {
-    display:flex;
+    display: flex;
     flex-flow: column;
     margin: 20px auto;
     background-color: #f4f4f4;
@@ -152,9 +277,12 @@ section {
 }
 
 @media only screen and (max-width: 750px) {
-    .content-list { width: 100%; }
-    #home a { width: 100%; }
-    h2 { margin-top: 200px; }
+    .content-list {
+        width: 100%;
+    }
+    #home a {
+        width: 100%;
+    }
 }
 
 
@@ -171,9 +299,10 @@ section {
     margin: 5px;
 }
 
-.project img{
-    width: 90%;
-    margin: 10px;
+.project img {
+    width: 80%;
+    margin: auto;
+    display: block;
 }
 
 .skill-list {
@@ -187,12 +316,12 @@ section {
     border-radius: 5px;
 }
 
-.other-content img{
+.other-content img {
     width: 90%;
     margin: 10px;
 }
 
-#contact ul{
+#contact ul {
     list-style: none;
 }
 
@@ -203,11 +332,11 @@ footer {
     padding: 10px 0;
 }
 
-footer p{
+footer p {
     text-align: right;
 }
 
-footer a:hover{
+footer a:hover {
     color: #f4f4f4;
     background-color: gray;
     border-radius: 5px;

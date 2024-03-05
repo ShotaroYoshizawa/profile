@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Shotaro Yoshizawa</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
@@ -15,12 +16,49 @@
             <h1><a href="index.html">Portfolio - Shotaro Yoshizawa</a></h1>
         </div>
     </header>
-
+    
     <div class="back-img-home">
         <div class="transparent">
             <section id="home">
                 <div class="container">
                     <h2>Home</h2>
+                    <p>プロフィールや実績などを紹介</p>
+                    <h3>実績一覧</h3>
+
+                    <!-- スライドの外枠 -->
+                    <div class="slide-wrapper">
+                        <!-- スライド（コンテンツ） -->
+                        <div id="slide" class="slide">
+                            <div>
+                                <a href="portfolio.html#tool1"><img src="picture\tool1.png" alt="tool1"></a>
+                                <p>リストからメールの自動作成</p>
+                            </div>
+                            <div>
+                                <a href="portfolio.html#tool2"><img src="picture\tool2.png" alt="tool2"></a>
+                                <p>請求書の自動作成</p>
+                            </div>
+                            <div>
+                                <a href="portfolio.html#tool3"><img src="picture\tool3.png" alt="tool3"></a>
+                                <p>Googleフォームの回答を転記</p>
+                            </div>
+                            <div>
+                                <a href="portfolio.html#tool4"><img src="picture\tool4.png" alt="tool4"></a>
+                                <p>スプレッドシートにコピペやクリア機能を追加</p>
+                            </div>
+                        </div>
+                        <!-- 左右のボタン -->
+                        <span id="prev" class="prev"></span>
+                        <span id="next" class="next"></span>
+                        <!-- インジケーター -->
+                        <ul class="indicator" id="indicator">
+                            <li class="list"></li>
+                            <li class="list"></li>
+                            <li class="list"></li>
+                            <li class="list"></li>
+                        </ul>
+                    </div>
+
+
                     <!-- <p>簡単な経歴を一文記入する<br><br>
                         最初に見て興味を惹かれるような内容</p> -->
                     <a href="about.html">
@@ -74,6 +112,8 @@
             <p>&copy; 2024 Shotaro Yoshizawa. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 
 </body>
+
 </html>
