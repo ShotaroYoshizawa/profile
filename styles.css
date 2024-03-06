@@ -14,7 +14,7 @@ header {
     width: 100%;
     background-color: #333333;
     color: #fff;
-    padding: 10px 0 10px 0;
+    padding-top: 10px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -31,14 +31,12 @@ header a {
 
 
 /*subnav用↓*/
-
 .gnavi__lists {
     display: flex;
-
 }
 
-.gnavi{
-    padding-left:5%;
+.gnavi {
+    padding-left: 5%;
     text-align: center;
 }
 
@@ -63,22 +61,26 @@ header a {
 .gnavi__lists li a:hover {
     color: #f4f4f4;
     background-color: gray;
-    border-radius: 5px;
 }
 
 .dropdown__lists {
-    display: none;/*デフォルトでは非表示の状態にしておく*/
+    display: none;
+    /*デフォルトでは非表示の状態にしておく*/
     width: 100%;
+    min-width: 150px;
     position: absolute;
     top: 40px;
     left: 0;
 }
+
 .gnavi__list:hover .dropdown__lists {
-    display: block;/*Gナビメニューにホバーしたら表示*/
+    display: block;
+    /*Gナビメニューにホバーしたら表示*/
 }
+
 .dropdown__list {
     background-color: #004d80;
-    height: 30px;
+    height: 40px;
     transition: all .3s;
     position: relative;
 }
@@ -91,8 +93,9 @@ header a {
     background-color: #f4f4f4;
     text-decoration: none;
     position: relative;
-    
+    white-space: nowrap;
 }
+
 .dropdown__list a::before {
     content: '';
     display: block;
@@ -106,45 +109,6 @@ header a {
 
 /*subnav用↑*/
 
-
-/*
-.back-img-home {
-    background: url("picture/tanbo1.jpg")
-      center / cover; 
-}
-
-.back-img-about {
-    background: url("picture/tanbo2.jpg")
-      center / cover; 
-}
-
-.back-img-skill {
-    background: url("picture/tanbo3.jpg")
-      center / cover; 
-}
-
-.back-img-portfolio {
-    background: url("picture/tanbo4.jpg")
-      center / cover; 
-}
-
-.back-img-other {
-    background: url("picture/tanbo5.jpg")
-      center / cover; 
-}
-
-.back-img-contact {
-    background: url("picture/tanbo6.jpg")
-      center / cover; 
-}
-
-.transparent{
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 100vw;
-    padding-bottom: 50%;
-}
-*/
-
 h2 {
     margin: 10px;
 }
@@ -155,9 +119,6 @@ section {
 }
 
 /*スクロール↓*/
-
-*,
-body,
 ul {
     margin: 0;
     padding: 0;
@@ -199,13 +160,13 @@ li {
 }
 
 .slide a :hover {
-    opacity: 0.5;
     transition: 0.3s;
+    filter: brightness(0.8);
 }
 
-.slide a {
-    height: auto;
+.slide img {
     width: auto;
+    height: 200px;
 }
 
 /* スライドさせるために必要なクラス */
@@ -227,38 +188,38 @@ li {
 
 /* ↓ 左右のボタン */
 .next {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: 10px;
+    right: 25px;
     bottom: 50%;
     z-index: 10;
     cursor: pointer;
-    border-top: solid 3px #000;
-    border-right: solid 3px #000;
-    -webkit-transform: rotate(45deg) translateY(50%);
-    transform: rotate(45deg) translateY(50%);
+    position: absolute;
+
+    font-size: 30px;
+    font-weight: bold;
+    transform: scale(0.7, 1);
+    background-color: #f4f4f4;
 }
 
 .prev {
-    position: absolute;
-    width: 15px;
-    height: 15px;
     left: 25px;
     bottom: 50%;
     z-index: 10;
     cursor: pointer;
-    border-top: solid 3px #000;
-    border-right: solid 3px #000;
-    -webkit-transform: rotate(-135deg) translateY(-50%);
-    transform: rotate(-135deg) translateY(-50%);
+    position: absolute;
+
+    font-size: 30px;
+    font-weight: bold;
+    transform: scale(0.7, 1);
+    background-color: #f4f4f4;
 }
 
 .next:hover {
+    color: #f4f4f4;
     background-color: gray;
 }
 
 .prev:hover {
+    color: #f4f4f4;
     background-color: gray;
 }
 
@@ -307,20 +268,23 @@ li {
     0% {
         opacity: 0;
     }
+
     25% {
         opacity: 1;
     }
+
     50% {
         opacity: 1;
     }
+
     75% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
-
 
 /*aboutの画像スライド↑*/
 #home h2 {
@@ -366,11 +330,11 @@ li {
     justify-content: center;
 }
 
-#home a {
+.home-nav {
     display: flex;
     flex-flow: column;
     margin: 20px auto;
-    background-color: #f4f4f4;
+    background-color: #cdcdcd;
     color: black;
     text-decoration: none;
     width: 50%;
@@ -378,7 +342,7 @@ li {
     border-radius: 10px;
 }
 
-#home a:hover {
+.home-nav:hover {
     background-color: gray;
     color: #f4f4f4;
 }
@@ -390,7 +354,8 @@ li {
 .content-list {
     padding: 10px 20px;
     display: block;
-    width: 40%;
+    width: 100%;
+    /*変更中*/
     margin: 10px 20px;
     background-color: #f4f4f4;
     border-radius: 10px;
@@ -404,10 +369,20 @@ li {
     #home a {
         width: 100%;
     }
+
+    .project {
+        display: block;
+    }
+
+    .other-content img {
+        width: 90%;
+    }
 }
 
 .project {
     text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .project h4 {
@@ -420,25 +395,125 @@ li {
 }
 
 .project img {
-    width: 80%;
-    margin: auto;
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
     display: block;
 }
 
-.skill-list {
-    list-style-type: none;
-    padding: 0;
+/* スキル　タブメニュー↓ */
+.tab {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.skill-list li {
-    margin: 10px 0;
-    padding: 10px 20px;
-    border-radius: 5px;
+/* タブメニュー */
+.tab__menu {
+    display: flex;
+    align-items: flex-end;
+    /* メニューを下揃え&高さを調整 */
+    justify-content: center;
+    min-height: 50px;
+    /* メニュー切替時にタブがズレないように */
+    padding: 0;
+    margin: 0;
 }
+
+.tab__menu-item {
+    list-style: none;
+    width: 200px;
+    padding: 8px 5px;
+    /* メニューに高さを付ける */
+    text-align: center;
+    margin-right: 6px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: all .3s;
+    /* アニメーション */
+}
+
+.tab__menu-item:last-of-type {
+    margin-right: 0px;
+}
+
+/* is-activeがついている時のスタイル */
+.tab__menu-item.is-active {
+    background-color: #cdcdcd;
+    padding: 12px 5px;
+}
+
+/* タブパネル */
+.tab__panel {
+    width: 100%;
+}
+
+.tab__panel-box {
+    min-height: 300px;    /* テキスト量が多くなっても対応できるように */
+    padding: 10px 30px;
+}
+
+.tab__panel-box001 {
+    background-color: #cdcdcd;
+    display: none;
+}
+
+.tab__panel-box002 {
+    background-color: #cdcdcd;
+    display: none;
+}
+
+.tab__panel-box003 {
+    background-color: #cdcdcd;
+    display: none;
+}
+
+.tab__panel-box004 {
+    background-color: #cdcdcd;
+    display: none;
+}
+
+/* is-showがついている時のスタイル */
+.tab__panel-box.is-show {
+    display: block;
+}
+
+.tab__panel-text li {
+    margin: 20px 0;
+}
+
+/* スキル　タブメニュー↑ */
 
 .other-content img {
-    width: 90%;
+    width: 40%;
     margin: 10px;
+}
+
+#change-image-box {
+    display: flex;
+    justify-content: center;
+}
+
+#change-image-box img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    object-position: auto;
+    margin: 10px;
+}
+
+#change-image-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#change-image-navigation img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: auto;
+    padding: 10px;
 }
 
 #contact ul {
@@ -482,5 +557,44 @@ footer nav ul li a {
 .here {
     color: #f4f4f4;
     background-color: gray;
-    border-radius: 5px;
 }
+
+
+
+/*
+.back-img-home {
+    background: url("picture/tanbo1.jpg")
+      center / cover; 
+}
+
+.back-img-about {
+    background: url("picture/tanbo2.jpg")
+      center / cover; 
+}
+
+.back-img-skill {
+    background: url("picture/tanbo3.jpg")
+      center / cover; 
+}
+
+.back-img-portfolio {
+    background: url("picture/tanbo4.jpg")
+      center / cover; 
+}
+
+.back-img-other {
+    background: url("picture/tanbo5.jpg")
+      center / cover; 
+}
+
+.back-img-contact {
+    background: url("picture/tanbo6.jpg")
+      center / cover; 
+}
+
+.transparent{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100vw;
+    padding-bottom: 50%;
+}
+*/

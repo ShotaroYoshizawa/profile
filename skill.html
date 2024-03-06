@@ -16,14 +16,10 @@
             <nav class="gnavi">
                 <ul class="gnavi__lists">
                     <li class="gnavi__list"><a href="index.html">Home</a>
-                        <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="index.html#index1">Home</a></li>
-                        </ul>
+                        <!-- ナビをここに追加 -->
                     </li>
                     <li class="gnavi__list"><a href="about.html">About</a>
-                        <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="about.html#about1">About</a></li>
-                        </ul>
+                        <!-- ナビをここに追加 -->
                     </li>
                     <li class="gnavi__list"><a href="skill.html" class="here">Skill</a>
                         <ul class="dropdown__lists">
@@ -44,9 +40,7 @@
                         </ul>
                     </li>
                     <li class="gnavi__list"><a href="contact.html">Contact</a>
-                        <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="contact.html#contact1">連絡先</a></li>
-                        </ul>
+                        <!-- ナビをここに追加 -->
                     </li>
                 </ul>
             </nav>
@@ -59,59 +53,64 @@
                 <div class="container">
                     <h2>Skill</h2>
                     <h2 id="skill1">使用ツール</h2>
-                    <div class="content">                        
-                        <div class="content-list">
-                            <h3>使用ツール</h3>
-                            <ul class="skill-list">
-                                <li>Googleスプレッドシート、ドキュメント、スライド</li>
-                                <li>Google Apps Script(GAS)</li>
-                                <li>Excel、Word、PowerPoint</li>
-                                <li>Illustrator、Photoshop</li>
-                                <li>Slack、Chatwork</li>
-                                <!-- 追加のスキルをここに追加 -->
-                            </ul>
-                        </div>
 
-                        <div class="content-list">
-                            <h3>使用ツール(建築分野)</h3>
-                            <ul class="skill-list">
-                                <li>CADソフト<br>(AutoCAD、Jw_CADなど)</li>
-                                <li>BIMソフト<br>(ArichiCAD、Revit、Rebroなど)</li>
-                                <li>その他計算ソフト<br>(IPAC、MICRO-PEAK、FlowDesignerなど)</li>
-                                <!-- 追加のスキルをここに追加 -->
-                            </ul>
+                    <div class="tab">
+                        <ul class="tab__menu">
+                            <li class="tab__menu-item is-active" data-tab="01">使用ツール</li>
+                            <li class="tab__menu-item" data-tab="02">使用ツール(建築分野)</li>
+                            <li class="tab__menu-item" data-tab="03">言語</li>
+                            <li class="tab__menu-item" data-tab="04">外部実績</li>
+                        </ul>
+                        <div class="tab__panel">
+                            <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01">
+                                <div class="tab__panel-text">
+                                    <ul>
+                                        <li>Googleスプレッドシート、ドキュメント、スライド</li>
+                                        <li>Google Apps Script(GAS)</li>
+                                        <li>Excel、Word、PowerPoint</li>
+                                        <li>Illustrator、Photoshop</li>
+                                        <li>Slack、Chatwork</li>
+                                        <!-- 追加のスキルをここに追加 -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                                <div class="tab__panel-text">
+                                    <ul>
+                                        <li>CADソフト<br>(AutoCAD、Jw_CADなど)</li>
+                                        <li>BIMソフト<br>(ArichiCAD、Revit、Rebroなど)</li>
+                                        <li>その他計算ソフト<br>(IPAC、MICRO-PEAK、FlowDesignerなど)</li>
+                                        <!-- 追加のスキルをここに追加 -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab__panel-box tab__panel-box003" data-panel="03">
+                                <div class="tab__panel-text">
+                                    <ul>
+                                        <li>GAS(2022/01~)</li>
+                                        <li>HTML(2022/07~)</li>
+                                        <li>CSS(2022/07~)</li>
+                                        <li>JavaScript(2022/07~)</li>
+                                        <li>PHP(2022/07~)</li>
+                                        <li>React(2023/01~)</li>
+                                        <!-- 追加のスキルをここに追加 -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab__panel-box tab__panel-box004" data-panel="04">
+                                <div class="tab__panel-text">
+                                    <ul>
+                                        <li>企業やインフルエンサーのアカウントリスト作成</li>
+                                        <li>データの集計や加工</li>
+                                        <li>請求書や資料の作成</li>
+                                        <li>Excelやスプレッドシートの関数やGASの作成</li>
+                                        <!-- 追加のスキルをここに追加 -->
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <h2 id="skill3">言語</h2>
-                    <div class="content">
-                        <div class="content-list">
-                            <h3>言語(学習期間)</h3>
-                            <ul class="skill-list">
-                                <li>GAS(2022/01~)</li>
-                                <li>HTML(2022/07~)</li>
-                                <li>CSS(2022/07~)</li>
-                                <li>JavaScript(2022/07~)</li>
-                                <li>PHP(2022/07~)</li>
-                                <li>React(2023/01~)</li>
-                                <!-- 追加のスキルをここに追加 -->
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h2 id="skill4">実績</h2>
-                    <div class="content">
-                        <div class="content-list">
-                            <h3>クラウドソーシング</h3>
-                            <ul class="skill-list">
-                                <li>企業やインフルエンサーのアカウントリスト作成</li>
-                                <li>データの集計や加工</li>
-                                <li>請求書や資料の作成</li>
-                                <li>Excelやスプレッドシートの関数やGASの作成</li>
-                                <!-- 追加のスキルをここに追加 -->
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>
@@ -132,6 +131,8 @@
             <p>&copy; 2024 Shotaro Yoshizawa. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="js/skill.js"></script>
 </body>
 
 </html>
