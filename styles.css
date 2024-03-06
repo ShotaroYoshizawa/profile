@@ -29,35 +29,83 @@ header a {
     text-decoration: none;
 }
 
-header li a:hover {
+
+/*subnav用↓*/
+
+.gnavi__lists {
+    display: flex;
+
+}
+
+.gnavi{
+    padding-left:5%;
+    text-align: center;
+}
+
+.gnavi__list {
+    width: 15%;
+    height: 40px;
+    position: relative;
+    transition: all .3s;
+}
+
+.gnavi__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all .3s;
+}
+
+.gnavi__lists li a:hover {
     color: #f4f4f4;
     background-color: gray;
     border-radius: 5px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0px;
-    text-align: center;
-    margin: 20px 0px;
+.dropdown__lists {
+    display: none;/*デフォルトでは非表示の状態にしておく*/
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.gnavi__list:hover .dropdown__lists {
+    display: block;/*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+    background-color: #004d80;
+    height: 30px;
+    transition: all .3s;
+    position: relative;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 10px 10px;
-}
-
-.here {
+.dropdown__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #333333;
     background-color: #f4f4f4;
-    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    
 }
+.dropdown__list a::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 5px);
+}
+
+/*subnav用↑*/
+
 
 /*
 .back-img-home {
@@ -120,26 +168,29 @@ li {
 }
 
 /* ↓ スライドの外枠 */
-.slide-wrapper { 
+.slide-wrapper {
     width: 80%;
     height: 100%;
     position: relative;
-    overflow: hidden; /*はみ出したスライドを隠す */
+    overflow: hidden;
+    /*はみ出したスライドを隠す */
     margin: 0 auto;
 }
 
 /*  ↓ スライド（コンテンツ） */
-.slide { /*スライド全体 */
+.slide {
+    /*スライド全体 */
     width: 400%;
     height: 100%;
     display: flex;
     transition: all 0.5s;
 }
 
-.slide div { /* スライド */
+.slide div {
+    /* スライド */
     width: 25%;
     height: 100%;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -148,8 +199,8 @@ li {
 }
 
 .slide a :hover {
-	opacity:0.5;
-	transition:0.3s;
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
 .slide a {
@@ -236,15 +287,70 @@ li {
 .indicator li:first-of-type {
     background-color: #000;
 }
+
 /*スクロール↑*/
 
 #about h3 {
     padding: 30px 0 0px 0;
 }
 
-#portfolio h3 {
+/*aboutの画像スライド↓*/
+
+#changePic {
+    animation: imgfade 8s infinite;
+    opacity: 0;
+    height: 400px;
+    width: auto;
+}
+
+@keyframes imgfade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*aboutの画像スライド↑*/
+#home h2 {
     padding-top: 180px;
-    margin-top:-180px;
+    margin-top: -180px;
+}
+
+#about h2 {
+    padding-top: 180px;
+    margin-top: -180px;
+}
+
+#skill h2 {
+    padding-top: 180px;
+    margin-top: -180px;
+}
+
+#portfolio h2 {
+    padding-top: 180px;
+    margin-top: -180px;
+}
+
+#other h2 {
+    padding-top: 180px;
+    margin-top: -180px;
+}
+
+#contact h2 {
+    padding-top: 180px;
+    margin-top: -180px;
 }
 
 .profile-picture img {
@@ -294,6 +400,7 @@ li {
     .content-list {
         width: 100%;
     }
+
     #home a {
         width: 100%;
     }
@@ -350,6 +457,29 @@ footer p {
 }
 
 footer a:hover {
+    color: #f4f4f4;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px 10px;
+}
+
+.here {
     color: #f4f4f4;
     background-color: gray;
     border-radius: 5px;

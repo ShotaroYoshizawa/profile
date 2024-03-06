@@ -13,14 +13,41 @@
     <header>
         <div class="container">
             <h1><a href="index.html">Portfolio - Shotaro Yoshizawa</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="here">About</a></li>
-                    <li><a href="skill.html">Skill</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="other.html">Other</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <nav class="gnavi">
+                <ul class="gnavi__lists">
+                    <li class="gnavi__list"><a href="index.html">Home</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="index.html#index1">Home</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="about.html" class="here">About</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="about.html#about1">About</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="skill.html">Skill</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="skill.html#skill1">使用ツール</a></li>
+                            <li class="dropdown__list"><a href="skill.html#skill3">言語</a></li>
+                            <li class="dropdown__list"><a href="skill.html#skill4">実績</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="portfolio.html">Portfolio</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="portfolio.html#portfolio1">GASツール</a></li>
+                            <li class="dropdown__list"><a href="portfolio.html#portfolio2">建築業界</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="other.html">Other</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="other.html#other1">DIY</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="contact.html">Contact</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="contact.html#contact1">連絡先</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -30,10 +57,14 @@
         <div class="transparent">
             <section id="about">
                 <div class="container">
-                    <h2>About</h2>
+                    <h2 id="about1">About</h2>
+
+                    <!-- 
                     <div class="profile-picture">
                         <img src="picture\tanbo1.jpg" alt="Your Name">
                     </div>
+                    -->
+                    <img id="changePic" src="picture\tanbo\tanbo1.jpg" alt="画像の切り替え">
                     <p>吉澤彰太郎<br>
                         Shotaro Yoshizawa</p>
                     <p>建築業界では主に空調衛生分野で、図面作成や機器選定、施主や行政との打ち合わせなどの業務をしてきました。<br>
@@ -41,6 +72,7 @@
                         現在は幅広い知識と経験を得るために、IT業界で転職活動をしています。</p>
                     <h3>- 出身地 -</h3>
                     <p>栃木県宇都宮市</p>
+                    
                     <h3>- 現在地 -</h3>
                     <p>大阪府大阪市北区大淀南</p>
                     <h3>- 学歴 -</h3>
@@ -71,6 +103,8 @@
             <p>&copy; 2024 Shotaro Yoshizawa. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="about.js"></script>
+
 </body>
 
 </html>

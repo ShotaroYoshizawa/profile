@@ -14,6 +14,43 @@
     <header>
         <div class="container">
             <h1><a href="index.html">Portfolio - Shotaro Yoshizawa</a></h1>
+            <nav class="gnavi">
+                <ul class="gnavi__lists">
+                    <li class="gnavi__list"><a href="index.html" class="here">Home</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="index.html#index1">Home</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="about.html">About</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="about.html#about1">About</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="skill.html">Skill</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="skill.html#skill1">使用ツール</a></li>
+                            <li class="dropdown__list"><a href="skill.html#skill3">言語</a></li>
+                            <li class="dropdown__list"><a href="skill.html#skill4">実績</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="portfolio.html">Portfolio</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="portfolio.html#portfolio1">GASツール</a></li>
+                            <li class="dropdown__list"><a href="portfolio.html#portfolio2">建築業界</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="other.html">Other</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="other.html#other1">DIY</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="contact.html">Contact</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="contact.html#contact1">連絡先</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     
@@ -21,22 +58,23 @@
         <div class="transparent">
             <section id="home">
                 <div class="container">
-                    <h2>Home</h2>
+                    <h2 id="index1">Home</h2>
+
                     <!-- スライドの外枠 -->
                     <div class="slide-wrapper">
                         <!-- スライド（コンテンツ） -->
                         <div id="slide" class="slide">
                             <div>
                                 <a href="portfolio.html#tool1"><img src="picture\tool1.png" alt="tool1"></a>
-                                <p>リストからメールの自動作成</p>
+                                <p>リストからメールの自動作成ツールを作成</p>
                             </div>
                             <div>
                                 <a href="portfolio.html#tool2"><img src="picture\tool2.png" alt="tool2"></a>
-                                <p>請求書の自動作成</p>
+                                <p>請求書の自動作成ツールを作成</p>
                             </div>
                             <div>
                                 <a href="portfolio.html#tool3"><img src="picture\tool3.png" alt="tool3"></a>
-                                <p>Googleフォームの回答を転記</p>
+                                <p>Googleフォームの回答を転記ツールを作成</p>
                             </div>
                             <div>
                                 <a href="portfolio.html#tool4"><img src="picture\tool4.png" alt="tool4"></a>
@@ -54,8 +92,6 @@
                             <li class="list"></li>
                         </ul>
                     </div>
-
-                    <h3>Menu</h3>
 
                     <!-- <p>簡単な経歴を一文記入する<br><br>
                         最初に見て興味を惹かれるような内容</p> -->
@@ -110,7 +146,7 @@
             <p>&copy; 2024 Shotaro Yoshizawa. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 
 </body>
 

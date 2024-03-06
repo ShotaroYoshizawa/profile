@@ -13,14 +13,41 @@
     <header>
         <div class="container">
             <h1><a href="index.html">Portfolio - Shotaro Yoshizawa</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skill.html">Skill</a></li>
-                    <li><a href="portfolio.html" class="here">Portfolio</a></li>
-                    <li><a href="other.html">Other</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <nav class="gnavi">
+                <ul class="gnavi__lists">
+                    <li class="gnavi__list"><a href="index.html">Home</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="index.html#index1">Home</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="about.html">About</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="about.html#about1">About</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="skill.html">Skill</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="skill.html#skill1">使用ツール</a></li>
+                            <li class="dropdown__list"><a href="skill.html#skill3">言語</a></li>
+                            <li class="dropdown__list"><a href="skill.html#skill4">実績</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="portfolio.html" class="here">Portfolio</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="portfolio.html#portfolio1">GASツール</a></li>
+                            <li class="dropdown__list"><a href="portfolio.html#portfolio2">建築業界</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="other.html">Other</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="other.html#other1">DIY</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnavi__list"><a href="contact.html">Contact</a>
+                        <ul class="dropdown__lists">
+                            <li class="dropdown__list"><a href="contact.html#contact1">連絡先</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +58,7 @@
             <section id="portfolio">
                 <div class="container">
                     <h2>Portfolio</h2>
-                    <h3>GASで作成したツール一覧</h3>
+                    <h2 id="portfolio1">GASで作成したツール一覧</h2>
                     <p>Google Apps Script（GAS）とは、JavaScriptをベースにGoogleが開発・提供しているプログラミング言語のことです。<br>
                         関連サービスや外部サービスと連携し、業務効率化ツールなどを作成することが出来ます。</p>
                     <div class="content">
@@ -105,7 +132,7 @@
                         </div>
                         <!-- 追加のプロジェクトをここに追加 -->
                     </div>
-                    <h3>建築業界での仕事内容</h3>
+                    <h2 id="portfolio2">建築業界での仕事内容</h2>
                     <div class="content">
                         <div class="content-list">
                             <div class="project">

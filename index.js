@@ -1,3 +1,5 @@
+//Homeの実績一覧
+
 const slide = document.getElementById('slide');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
