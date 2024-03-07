@@ -340,14 +340,21 @@ li {
     justify-content: center;
 }
 
-.history dd{
-    margin-left: 150px;    
-    text-align: left;
+.history dl{
+    padding: 10px 20px;
+    margin: 0px auto;
+    border-bottom: 1px solid gray;
 }
 
 .history dt {
     text-align: left;  /* 文章を左寄せする(※) */
     float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
+    padding-top: 4px;
+}
+
+.history dd{
+    margin-left: 150px;    
+    text-align: left;
 }
 
 .home-nav {
