@@ -129,10 +129,31 @@ section {
     margin: 0px auto 20px auto;
 }
 
+.Intro-title h3{
+    text-align: left;
+    margin: 0;
+    padding: 0 30px;
+    color: gray;
+    font-size: 30px;
+    float: left;
+}
+
+.Intro-title h4{
+    padding: 18px 0 5px 0;
+    text-align: left;
+    border-bottom: 1px solid gray;
+}
+
 .Introduction{
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 10px;
     margin: 0px auto 20px auto;
+}
+
+
+
+.Introduction a{
+    text-decoration: none;
 }
 
 .Intro-tab {
@@ -187,7 +208,7 @@ li.list {
     /* スライド */
     width: 25%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -550,6 +571,8 @@ li.list {
 
 .tab__panel-text li {
     margin: 20px 0;
+    list-style: none;
+    
 }
 
 /* スキル　タブメニュー↑ */
