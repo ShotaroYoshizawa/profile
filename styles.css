@@ -58,6 +58,10 @@ header a {
     transition: all .3s;
 }
 
+.gnavi__lists li {
+    list-style: none;
+}
+
 .gnavi__lists li a:hover {
     color: #f4f4f4;
     background-color: gray;
@@ -118,13 +122,45 @@ section {
     text-align: center;
 }
 
+/*indexトップ↓*/
+.index-top{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0px auto 20px auto;
+}
+
+.Introduction{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0px auto 20px auto;
+}
+
+.Intro-tab {
+    display: flex;    
+    text-align: center;
+    flex-wrap: wrap    
+}
+
+.Intro-tab img{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    object-position: auto;
+}
+
+.Intro-tab div{
+    width: 50%;
+}
+/*indexトップ↑*/
+
+
 /*スクロール↓*/
-ul {
+ul.indicator {
     margin: 0;
     padding: 0;
 }
 
-li {
+li.list {
     list-style: none;
 }
 
@@ -540,6 +576,10 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#change-image-navigation li {
+    list-style: none;
 }
 
 #change-image-navigation img {
