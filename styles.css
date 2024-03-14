@@ -163,22 +163,27 @@ section {
 
 .Intro-title h3 {
     text-align: left;
-
     padding-left: 30px;
     padding-right: 30px;
-
     color: gray;
     font-size: 30px;
-    float: left;
     padding-top: 180px;
     margin-top: -180px;
     margin-bottom: 0;
 }
 
+@media(min-width:751px) {
+    .Intro-title h3  {
+        float: left;
+    }
+}
+
 .Intro-title h4 {
-    padding: 8px 0 5px 0;
+    padding: 8px 0 5px 30px;
+    margin: o auto 20px auto;
     text-align: left;
     border-bottom: 1px solid gray;
+    margin-top: 0;
 }
 
 .Intro-title img {
@@ -235,6 +240,12 @@ section {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+.Intro-tab div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Intro-tab p {
@@ -432,24 +443,28 @@ li.list {
 
 .subject-title h3 {
     text-align: left;
-
     padding-left: 30px;
     padding-right: 30px;
-
     color: gray;
     font-size: 30px;
-    float: left;
     padding-top: 180px;
     margin-top: -180px;
     margin-bottom: 0;
 }
 
 .subject-title h4 {
-    padding: 8px 0 5px 0;
+    padding: 8px 0 5px 30px;
+    margin: o auto 20px auto;
     text-align: left;
     border-bottom: 1px solid gray;
+    margin-top: 0;
 }
 
+@media(min-width:751px) {
+    .subject-title h3  {
+        float: left;
+    }
+}
 
 #home h2 {
     padding-top: 180px;
@@ -699,8 +714,8 @@ li.list {
 }
 
 #change-image-navigation img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     object-position: auto;
     padding: 10px;
