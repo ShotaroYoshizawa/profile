@@ -10,176 +10,226 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">Portfolio - Shotaro Yoshizawa</a></h1>
-            <nav class="gnavi">
-                <ul class="gnavi__lists">
-                    <li class="gnavi__list"><a href="index.html" class="here">Home</a>
+    <div class="load-fade">
+        <header>
+            <div class="container">
+                <h1><a href="index.html">Portfolio - Shotaro Yoshizawa</a></h1>
+                <nav class="gnavi">
+                    <ul class="gnavi__lists">
+                        <li class="gnavi__list"><a href="index.html" class="here">Home</a>
+                            <!-- ナビをここに追加 -->
+                        </li>
+                        <li class="gnavi__list"><a href="about.html">About</a>
+                            <ul class="dropdown__lists">
+                                <li class="dropdown__list"><a href="about.html#about1">自己紹介</a></li>
+                                <li class="dropdown__list"><a href="about.html#about2">経緯(建築)</a></li>
+                                <li class="dropdown__list"><a href="about.html#about3">経緯(IT)</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnavi__list"><a href="skill.html">Skill</a>
+                            <ul class="dropdown__lists">
+                                <li class="dropdown__list"><a href="skill.html#skill1">使用ツール</a></li>
+                                <li class="dropdown__list"><a href="skill.html#skill2">サイト作成経緯</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnavi__list"><a href="portfolio.html">Portfolio</a>
+                            <ul class="dropdown__lists">
+                                <li class="dropdown__list"><a href="portfolio.html#portfolio1">GASツール</a></li>
+                                <li class="dropdown__list"><a href="portfolio.html#portfolio2">建築業界</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnavi__list"><a href="other.html">Other</a>
+                            <ul class="dropdown__lists">
+                                <li class="dropdown__list"><a href="other.html#other1">DIY</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnavi__list"><a href="contact.html">Contact</a>
+                            <!-- ナビをここに追加 -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-                    </li>
-                    <li class="gnavi__list"><a href="about.html">About</a>
-
-                    </li>
-                    <li class="gnavi__list"><a href="skill.html">Skill</a>
-                        <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="skill.html#skill1">使用ツール</a></li>
-                            <li class="dropdown__list"><a href="skill.html#skill3">言語</a></li>
-                            <li class="dropdown__list"><a href="skill.html#skill4">実績</a></li>
-                        </ul>
-                    </li>
-                    <li class="gnavi__list"><a href="portfolio.html">Portfolio</a>
-                        <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="portfolio.html#portfolio1">GASツール</a></li>
-                            <li class="dropdown__list"><a href="portfolio.html#portfolio2">建築業界</a></li>
-                        </ul>
-                    </li>
-                    <li class="gnavi__list"><a href="other.html">Other</a>
-                        <ul class="dropdown__lists">
-                            <li class="dropdown__list"><a href="other.html#other1">DIY</a></li>
-                        </ul>
-                    </li>
-                    <li class="gnavi__list"><a href="contact.html">Contact</a>
-
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="back-img-home">
-        <div class="transparent">
-            <section id="home">
-                <div class="container">
-                    <h2 id="index1">Home</h2>
-
-                    <h3>作成したツール一覧</h3>
-                    <!-- スライドの外枠 -->
-                    <div class="slide-wrapper">
-                        <!-- スライド（コンテンツ） -->
-                        <div id="slide" class="slide">
-                            <div>
-                                <a href="portfolio.html#tool1"><img src="picture\tool1.png" alt="tool1"></a>
-                                <p>リストからメールの自動作成ツールを作成</p>
-                            </div>
-                            <div>
-                                <a href="portfolio.html#tool2"><img src="picture\tool2.png" alt="tool2"></a>
-                                <p>請求書の自動作成ツールを作成</p>
-                            </div>
-                            <div>
-                                <a href="portfolio.html#tool3"><img src="picture\tool3.png" alt="tool3"></a>
-                                <p>Googleフォームの回答を転記ツールを作成</p>
-                            </div>
-                            <div>
-                                <a href="portfolio.html#tool4"><img src="picture\tool4.png" alt="tool4"></a>
-                                <p>スプレッドシートにコピペやクリア機能を追加</p>
-                            </div>
-                        </div>
-                        <!-- 左右のボタン -->
-                        <div id="prev" class="prev">
-                            <p> ＜ </p>
-                        </div>
-                        <div id="next" class="next">
-                            <p> ＞ </p>
-                        </div>
-                        <!-- インジケーター -->
-                        <ul class="indicator" id="indicator">
-                            <li class="list"></li>
-                            <li class="list"></li>
-                            <li class="list"></li>
-                            <li class="list"></li>
-                        </ul>
+        <section id="home">
+            <div class="container">
+                <div class="Introduction">
+                    <div class="Intro-title">
+                        <h3>Home</h3>
+                        <h4>時間と快適さをつくるために</h4>
+                        <img src="picture\back\back01.jpg" alt="back01" class="top-pic">
                     </div>
 
-                    <h3>Profileサイトの作成経緯</h3>
-                    <div class="subject">
-                        
-                        <div class="history">
-                            <dl>
-                                <dt class="date">2024/03/08</dt><dd>Portfolioページの詳細文章を省略可にする</dd>
-                            </dl>
-                            <dl>
-                                <dt class="date">2024/03/07</dt><dd>「Profileサイトの作成経緯」を追加</dd>
-                            </dl>
-                            <dl>
-                                <dt class="date">2024/03/06</dt><dd>Skillページをタブでまとめ直す</dd>
-                            </dl>
-                            <dl>
-                                <dt class="date">2024/03/05</dt><dd>OtherページのDIY写真一覧機能を導入<br>
-                                    ヘッダーにサブナビを追加</dd>
-                            </dl>                            
-                            <dl>
-                                <dt class="date">2024/03/04</dt><dd>Homeページの実績閲覧機能を導入<br>
-                                    Aboutページに切り替わる風景写真を追加</dd>
-                            </dl>
-                            <dl>
-                                <dt class="date">2024/03/02</dt><dd>プロト版完成（HTML&CSSのみ）<br>
-                                <a href="https://shotaroyoshizawa.github.io/portfolio/index.html" target="_blank">プロト版はこちら</a></dd>
-                            </dl>
-                            <dl>
-                                <dt class="date">2024/03/01</dt><dd>過去の作成ツールを公開用に整理</dd>
-                            </dl>
-                            <dl>
-                                <dt class="date">2024/02/28</dt><dd>Profileサイト作成開始</dd>
-                            </dl>
+                    <div class="scroll-up">
+                        <h4>普段の作業を見返して、改善点を見つけていけば<br>
+                            仕事はもっと快適になる</h4>
+                        <div class="Intro-tab">
+                            <div>
+                                <img src="picture\back\back2-1.jpg" alt="back2-1">
+                                <p>単純作業の時間を少なくしたい</p>
+                            </div>
+                            <div>
+                                <img src="picture\back\back2-2.jpg" alt="back2-2">
+                                <p>誰でも簡単な作業にして、ミスを減らしたい</p>
+                            </div>
+                            <div>
+                                <img src="picture\back\back2-3.jpg" alt="back2-3">
+                                <p>手順を減らして、引き継ぎも簡略化したい</p>
+                            </div>
+                            <div>
+                                <img src="picture\back\back2-4.jpg" alt="back2-4">
+                                <p>時間や労力を他の仕事に回したい</p>
+                            </div>
                         </div>
+                        <p>使う人に貢献できツール開発をして<br>
+                            仕事がもっと快適になるサポートをしていきます</p>
                     </div>
-                    
-                    <!-- <p>簡単な経歴を一文記入する<br><br>
-                        最初に見て興味を惹かれるような内容</p> -->
-                    <h3>Profile - Menu</h3>
-                    <a href="about.html" class="home-nav">
-                        <div>
-                            <h3>About</h3>
-                            <p>自己紹介や経歴など</p>
-                        </div>
-                    </a>
-                    <a href="skill.html" class="home-nav">
-                        <div>
-                            <h3>Skill</h3>
-                            <p>使用可能なツールや言語、実績など</p>
-                        </div>
-                    </a>
-                    <a href="portfolio.html" class="home-nav">
-                        <div>
-                            <h3>Portfolio</h3>
-                            <p>これまでの成果物</p>
-                        </div>
-                    </a>
-                    <a href="other.html" class="home-nav">
-                        <div>
-                            <h3>Other</h3>
-                            <p>趣味などその他の項目</p>
-                        </div>
-                    </a>
-                    <a href="contact.html" class="home-nav">
-                        <div>
-                            <h3>Contact</h3>
-                            <p>連絡先</p>
-                        </div>
-                    </a>
                 </div>
-            </section>
-        </div>
+
+                <div class="scroll-up">
+                    <div class="Introduction">
+                        <div class="Intro-title">
+                            <h3>About</h3>
+                            <h4>建築業界からIT業界に</h4>
+                            <img src="picture\back\back3-1.jpg" alt="back3-1">
+                        </div>
+
+                        <p>快適な生活環境を作りたくて建築業界で働いて<br>
+                            使う人が快適になるような仕事をするためにIT業界へ</p>
+                        <div class="navi">
+                            <a href="about.html">
+                                <p>＞＞＞ View more ＞＞＞</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-up">
+                    <div class="Introduction">
+                        <div class="Intro-title">
+                            <h3>Skill</h3>
+                            <h4>実践を通して技術を磨いていく</h4>
+                            <img src="picture\back\back4-1.jpg" alt="back4-1">
+                        </div>
+                        <p>思いついたアイディアを形にするために<br>
+                            独学でITを学び始め、ITスクールで基礎を身に着けました</p>
+                        <p>未経験の言語も積極的に学び続けていきます</p>
+                        <p>当サイトの作成経緯もこちらに記載</p>
+                        <div class="navi">
+                            <a href="skill.html">
+                                <p>＞＞＞ View more ＞＞＞</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-up">
+                    <div class="Introduction">
+                        <div class="Intro-title">
+                            <h3>Portfolio</h3>
+                            <h4>作業効率化のためにこれまで作ってきたもの</h4>
+                            <img src="picture\back\back1-1.jpg" alt="back1-1">
+                        </div>
+
+                        <h4>作成したツール一覧</h4>
+                        <div class="slide-wrapper">
+                            <!-- スライド（コンテンツ） -->
+                            <div id="slide" class="slide">
+                                <div>
+                                    <a href="portfolio.html#tool1"><img src="picture\tool1.png" alt="tool1"></a>
+                                    <p>メール作成をリストから自動で</p>
+                                </div>
+                                <div>
+                                    <a href="portfolio.html#tool2"><img src="picture\tool2.png" alt="tool2"></a>
+                                    <p>購入リストから請求書を自動で作成</p>
+                                </div>
+                                <div>
+                                    <a href="portfolio.html#tool3"><img src="picture\tool3.png" alt="tool3"></a>
+                                    <p>アンケート結果は自動で反映</p>
+                                </div>
+                                <div>
+                                    <a href="portfolio.html#tool4"><img src="picture\tool4.png" alt="tool4"></a>
+                                    <p>決まった範囲のコピペや削除はボタン一つで</p>
+                                </div>
+                            </div>
+                            <!-- 左右のボタン -->
+                            <div id="prev" class="prev">
+                                <p> ＜ </p>
+                            </div>
+                            <div id="next" class="next">
+                                <p> ＞ </p>
+                            </div>
+                            <!-- インジケーター -->
+                            <ul class="indicator" id="indicator">
+                                <li class="list"></li>
+                                <li class="list"></li>
+                                <li class="list"></li>
+                                <li class="list"></li>
+                            </ul>
+                        </div>
+                        <p>案件ごとに適したツールを作成して<br>
+                            業務改善をしています</p>
+                        <div class="navi">
+                            <a href="portfolio.html">
+                                <p>View more ＞＞＞</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-up">
+                    <div class="Introduction">
+                        <div class="Intro-title">
+                            <h3>Other</h3>
+                            <h4>生活をよくするために日々つくり続ける</h4>
+                            <img src="picture/diy/bed2.JPG" alt="bed2">
+                        </div>
+                        <p>自分のこだわりを突き詰めて<br>
+                            創意工夫を最大限に詰め込んだものづくり</p>
+                        <div class="navi">
+                            <a href="other.html">
+                                <p>＞＞＞ View more ＞＞＞</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-up">
+                    <div class="Introduction">
+                        <div class="Intro-title">
+                            <h3>Contact</h3>
+                            <h4>連絡先</h4>
+                            <img src="picture\back\back5-1.jpg" alt="back5-1">
+                        </div>
+                        <div class="navi">
+                            <a href="contact.html">
+                                <p>＞＞＞ View more ＞＞＞</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skill.html">Skill</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="other.html">Other</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <p>&copy; 2024 Shotaro Yoshizawa. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/index.js"></script>
+
     </div>
-
-    <footer>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skill.html">Skill</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="other.html">Other</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <p>&copy; 2024 Shotaro Yoshizawa. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="js/index.js"></script>
 
 </body>
 

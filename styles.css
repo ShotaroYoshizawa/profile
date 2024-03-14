@@ -5,6 +5,35 @@ body {
     padding: 0;
 }
 
+/*load用↓*/
+.load-fade {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.load-fade.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*load用↑*/
+
+/*scroll用↓*/
+.scroll-up {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+
+.scroll-up.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+/*scroll用↑*/
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -33,6 +62,7 @@ header a {
 /*subnav用↓*/
 .gnavi__lists {
     display: flex;
+    margin-bottom: 0px;
 }
 
 .gnavi {
@@ -56,6 +86,15 @@ header a {
     text-decoration: none;
     font-size: 15px;
     transition: all .3s;
+}
+
+.gnavi__lists li {
+    list-style: none;
+}
+
+.gnavi__lists ul {
+    margin: 0;
+    padding: 0;
 }
 
 .gnavi__lists li a:hover {
@@ -114,17 +153,117 @@ h2 {
 }
 
 section {
-    padding: 10px 0 50px 0;
+    padding: 20px 0 50px 0;
     text-align: center;
 }
 
+.intro-title {
+    position: relative;
+}
+
+.Intro-title h3 {
+    text-align: left;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: gray;
+    font-size: 30px;
+    float: left;
+    padding-top: 180px;
+    margin-top: -180px;
+    margin-bottom: 0;
+}
+
+.Intro-title h4 {
+    padding: 8px 0 5px 0;
+    text-align: left;
+    border-bottom: 1px solid gray;
+}
+
+.Intro-title img {
+    height: 240px;
+    width: 90%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: auto;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.Intro-title img.top-pic {
+    height: 600px;
+    width: 90%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: auto;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.Introduction {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 0px auto 20px auto;
+    border-radius: 10px;
+}
+
+.Introduction a {
+    text-decoration: none;
+    color: black;
+}
+
+.navi p {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.navi p:hover {
+    background-color: gray;
+    color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.Intro-tab {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:751px) {
+    .Intro-tab {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.Intro-tab p {
+    margin: 5px auto 20px auto;
+}
+
+.Intro-tab img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    object-position: auto;
+    border-radius: 20px;
+    border: 1px gray solid;
+}
+
+.Intro-tab div {
+    width: 50%;
+}
+
+/*indexトップ↑*/
+
+
 /*スクロール↓*/
-ul {
+ul.indicator {
     margin: 0;
     padding: 0;
 }
 
-li {
+li.list {
     list-style: none;
 }
 
@@ -151,7 +290,7 @@ li {
     /* スライド */
     width: 25%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -248,12 +387,9 @@ li {
 .indicator li:first-of-type {
     background-color: #000;
 }
+
 /*スクロール↑*/
 
-#about h3 {
-    padding: 30px 0 0px 0;
-    margin-bottom: 10px;
-}
 
 /*aboutの画像スライド↓*/
 
@@ -287,12 +423,35 @@ li {
 }
 
 /*aboutの画像スライド↑*/
-#home h2 {
-    padding-top: 180px;
-    margin-top: -180px;
+.sub-subject {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 0px auto 20px auto;
+    border-radius: 10px;
 }
 
-#about h2 {
+.subject-title h3 {
+    text-align: left;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: gray;
+    font-size: 30px;
+    float: left;
+    padding-top: 180px;
+    margin-top: -180px;
+    margin-bottom: 0;
+}
+
+.subject-title h4 {
+    padding: 8px 0 5px 0;
+    text-align: left;
+    border-bottom: 1px solid gray;
+}
+
+
+#home h2 {
     padding-top: 180px;
     margin-top: -180px;
 }
@@ -330,54 +489,40 @@ li {
     justify-content: center;
 }
 
-.history{
+.history {
     margin: 10px auto;
     padding: 0 10px;
     border-top: 1px solid gray;
     float: left;
 }
 
-.subject{
+.subject {
     display: flex;
     justify-content: center;
 }
 
-.history dl{
+.history dl {
     padding: 10px 20px;
     margin: 0px auto;
     border-bottom: 1px solid gray;
 }
 
 .history dt {
-    text-align: left;  /* 文章を左寄せする(※) */
-    float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
+    text-align: left;
+    /* 文章を左寄せする(※) */
+    float: left;
+    /* 左端に寄せて、後続を右側へ回り込ませる */
     padding-top: 4px;
 }
 
-.history dd{
-    margin-left: 150px;    
+.history dd {
+    margin-left: 150px;
     text-align: left;
 }
 
-.home-nav {
-    display: flex;
-    flex-flow: column;
-    margin: 20px auto;
-    background-color: #cdcdcd;
-    color: black;
-    text-decoration: none;
-    width: 50%;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.home-nav:hover {
-    background-color: gray;
-    color: #f4f4f4;
-}
-
-#home h3 {
-    margin: 10px 0;
+.history ul {
+    padding-left: 20px;
+    margin: 0;
 }
 
 .content-list {
@@ -387,6 +532,7 @@ li {
     /*変更中*/
     margin: 10px 20px;
     background-color: #f4f4f4;
+    border: 1px solid gray;
     border-radius: 10px;
 }
 
@@ -404,9 +550,9 @@ li {
     }
 }
 
-@media(min-width:751px){
+@media(min-width:751px) {
     .project {
-    display:flex;
+        display: flex;
     }
 }
 
@@ -431,15 +577,19 @@ li {
     display: block;
 }
 
-.details__summary:hover{
+.arich {
+    margin: 0 auto;
+}
+
+
+.details__summary:hover {
     color: gray;
 }
 
 /* スキル　タブメニュー↓ */
 .tab {
     max-width: 700px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 /* タブメニュー */
@@ -461,7 +611,7 @@ li {
     /* メニューに高さを付ける */
     text-align: center;
     margin-right: 6px;
-    background-color: #f4f4f4;
+    background-color: #fff;
     cursor: pointer;
     transition: all .3s;
     /* アニメーション */
@@ -483,7 +633,8 @@ li {
 }
 
 .tab__panel-box {
-    min-height: 300px;    /* テキスト量が多くなっても対応できるように */
+    min-height: 300px;
+    /* テキスト量が多くなっても対応できるように */
     padding: 10px 30px;
 }
 
@@ -514,6 +665,7 @@ li {
 
 .tab__panel-text li {
     margin: 20px 0;
+    list-style: none;
 }
 
 /* スキル　タブメニュー↑ */
@@ -542,6 +694,10 @@ li {
     flex-wrap: wrap;
 }
 
+#change-image-navigation li {
+    list-style: none;
+}
+
 #change-image-navigation img {
     width: 100px;
     height: 100px;
@@ -555,7 +711,7 @@ li {
 }
 
 footer {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -592,43 +748,3 @@ footer nav ul li a {
     color: #f4f4f4;
     background-color: gray;
 }
-
-
-
-/*
-.back-img-home {
-    background: url("picture/tanbo1.jpg")
-      center / cover; 
-}
-
-.back-img-about {
-    background: url("picture/tanbo2.jpg")
-      center / cover; 
-}
-
-.back-img-skill {
-    background: url("picture/tanbo3.jpg")
-      center / cover; 
-}
-
-.back-img-portfolio {
-    background: url("picture/tanbo4.jpg")
-      center / cover; 
-}
-
-.back-img-other {
-    background: url("picture/tanbo5.jpg")
-      center / cover; 
-}
-
-.back-img-contact {
-    background: url("picture/tanbo6.jpg")
-      center / cover; 
-}
-
-.transparent{
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 100vw;
-    padding-bottom: 50%;
-}
-*/
