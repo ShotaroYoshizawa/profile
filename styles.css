@@ -36,7 +36,7 @@ body {
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 header {
@@ -50,7 +50,7 @@ header {
 }
 
 header h1 {
-    margin: 0 auto 10px auto;
+    margin: 0 auto 0 auto;
 }
 
 header a {
@@ -62,6 +62,7 @@ header a {
 /*subnav用↓*/
 .gnavi__lists {
     display: flex;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -153,7 +154,7 @@ h2 {
 }
 
 section {
-    padding: 20px 0 50px 0;
+    padding: 0px 0 50px 0;
     text-align: center;
 }
 
@@ -209,7 +210,7 @@ section {
 .Introduction {
     background-color: #f4f4f4;
     padding: 10px;
-    margin: 0px auto 20px auto;
+    margin: 20px auto 20px auto;
     border-radius: 10px;
 }
 
@@ -253,12 +254,19 @@ section {
 }
 
 .Intro-tab img {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 90%;
     object-fit: cover;
     object-position: auto;
     border-radius: 20px;
     border: 1px gray solid;
+}
+
+@media(min-width:751px) {
+    .Intro-tab img {
+        height: 200px;
+        width: auto;
+    }
 }
 
 .Intro-tab div {
@@ -734,6 +742,7 @@ footer {
 
 footer p {
     text-align: right;
+    margin: 5px auto;
 }
 
 footer a:hover {
@@ -745,7 +754,7 @@ footer a:hover {
 footer nav ul {
     list-style: none;
     padding: 0px;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 footer nav ul li {
