@@ -5,6 +5,7 @@ body {
     padding: 0;
 }
 
+
 /*load用↓*/
 .load-fade {
     opacity: 0;
@@ -58,6 +59,8 @@ header a {
     color: #fff;
     text-decoration: none;
 }
+
+
 
 
 /*subnav用↓*/
@@ -166,7 +169,7 @@ section {
 }
 
 .top-pic img {
-    height: 500px;
+    height: 400px;
     width: 100%;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -225,6 +228,7 @@ section {
     text-align: left;
     border-bottom: 1px solid gray;
     margin-top: 0;
+
 }
 
 .Intro-title img {
@@ -818,3 +822,44 @@ footer nav ul li a {
     color: #f4f4f4;
     background-color: gray;
 }
+
+/* スクロールバー↓ 
+.scroll-wrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }*/
+
+  .progress-bar-h{
+    z-index: 1000;
+    width: 20px;
+    height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: gray;
+  }
+
+  .progress-bar {
+    z-index: 999;
+    width: 0;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: gray;
+  }
+
+  .progress-box{
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: red;
+  }
+
+/* スクロールバー↑ */

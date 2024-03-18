@@ -81,3 +81,30 @@ function scroll_effect() {
   }
 }
 window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+
+
+//スクロールバー
+$(document).ready(function () {
+  const content = $('.scroll-wrap');
+
+  const bar = $('.progress-bar');
+  const windowHeight = $(window).height();
+
+  const barH = $('.progress-bar-h');
+  const box = $('.progress-box');
+
+
+  const Introduction = $('.Introduction');
+  
+
+  $(window).on('scroll', function () {
+    const contentTop = content.offset().top - $(window).scrollTop();
+    const contentBottom = windowHeight - contentTop - content.height();
+    const scrollPercent = (contentTop / (windowHeight - content.height())) * 100;
+    bar.css('width', scrollPercent + '%');
+
+//    barH.css('height', scrollPercent + '%');
+//    box.css('top', 100 - scrollPercent + '%');
+
+  });
+});
