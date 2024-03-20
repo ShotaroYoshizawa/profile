@@ -37,8 +37,14 @@ body {
 /*scroll用↑*/
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0px auto 0px auto;
+}
+
+@media(min-width:751px) {
+    .container {
+        width: 80%;
+    }
 }
 
 header {
@@ -61,13 +67,13 @@ header a {
 }
 
 
-
-
 /*subnav用↓*/
 .gnavi__lists {
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    flex-wrap: wrap;
 }
 
 .gnavi {
@@ -80,6 +86,7 @@ header a {
     height: 40px;
     position: relative;
     transition: all .3s;
+    min-width: 80px;
 }
 
 .gnavi__list a {
@@ -115,6 +122,7 @@ header a {
     position: absolute;
     top: 40px;
     left: 0;
+    z-index: 1;
 }
 
 .gnavi__list:hover .dropdown__lists {
@@ -191,7 +199,7 @@ section {
     font-size: 50px;
     margin: 0;
     color: #444444;
-    letter-spacing :1px;
+    letter-spacing: 1px;
 }
 
 .top-title h3 {
@@ -804,11 +812,15 @@ footer a:hover {
 footer nav ul {
     list-style: none;
     padding: 0px;
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer nav ul li {
     display: inline;
+    padding: 5px 0px;
 }
 
 footer nav ul li a {
@@ -832,7 +844,7 @@ footer nav ul li a {
     position: relative;
   }*/
 
-  .progress-bar-h{
+.progress-bar-h {
     z-index: 1000;
     width: 20px;
     height: 0;
@@ -840,9 +852,9 @@ footer nav ul li a {
     top: 0;
     left: 0;
     background: gray;
-  }
+}
 
-  .progress-bar {
+.progress-bar {
     z-index: 999;
     width: 0;
     height: 50px;
@@ -850,9 +862,9 @@ footer nav ul li a {
     top: 0;
     left: 0;
     background: gray;
-  }
+}
 
-  .progress-box{
+.progress-box {
     z-index: 1000;
     width: 20px;
     height: 20px;
@@ -860,6 +872,6 @@ footer nav ul li a {
     bottom: 0;
     right: 0;
     background: red;
-  }
+}
 
 /* スクロールバー↑ */
