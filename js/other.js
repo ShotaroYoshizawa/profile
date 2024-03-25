@@ -1,54 +1,3 @@
-var changeAreaElement = document.getElementById('change-image-box'),
-    changeNavigation  = document.getElementById('change-image-navigation');
-
-if (changeAreaElement && changeNavigation) {
-	var changeAreaImage        = changeAreaElement.getElementsByTagName('img'),
-	    changeNavigationTmps   = changeNavigation.childNodes,
-	    changeNavigations      = [],
-	    changeNavigationAnchor = [],
-	    defaultImagePath       = '',
-	    index                  = 0,
-	    len                    = 0;
-
-	// 初期画像の取得
-	if (changeAreaImage.length > 0) {
-		defaultImagePath = changeAreaImage[0].src;
-	}
-
-	/**
-	 * マウスオーバー時
-	 */
-	var onImage = function() {
-		changeImage(this.href);
-	};
-
-	/**
-	 * マウスアウト時
-	 */
-	var offImage = function() {
-		changeImage(defaultImagePath);
-	};
-
-	/**
-	 * 画像の切り替え
-	 */
-	var changeImage = function(targetPath) {
-		if (changeAreaImage.length > 0 && targetPath) {
-			changeAreaImage[0].src = targetPath;
-		}
-	};
-
-	// アンカー要素にマウスオーバーとマウスアウトのイベントを割り当て
-	for (index = 0, len = changeNavigationTmps.length; index < len; index++) {
-		if (changeNavigationTmps[index].nodeType === 1) {
-			changeNavigationAnchor = changeNavigationTmps[index].getElementsByTagName('a');
-			if (changeNavigationAnchor.length > 0) {
-				changeNavigationAnchor[0].onmouseover = onImage;
-				changeNavigationAnchor[0].onmouseout  = offImage;
-			}
-		}
-	}
-}
 
 //lode用
 function load_effect() {
@@ -78,3 +27,24 @@ function load_effect() {
 	}
   }
   window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+
+  
+  // DIY画像の切り替え
+const pushBtn = (btn,src) => {
+	document.getElementById(btn).onclick = function(){
+	  document.getElementById("pics").src=src;
+	}
+  }
+  
+  pushBtn("diyBtn01","picture/diy/table1.JPG")
+  pushBtn("diyBtn02","picture/diy/table2.JPG")
+  pushBtn("diyBtn03","picture/diy/bed1.JPG")
+  pushBtn("diyBtn04","picture/diy/bed2.JPG")
+  pushBtn("diyBtn05","picture/diy/fun1.JPG")
+  pushBtn("diyBtn06","picture/diy/step1.JPG")
+  pushBtn("diyBtn07","picture/diy/glass1.JPG")
+  pushBtn("diyBtn08","picture/diy/hanger1.JPG")
+  pushBtn("diyBtn09","picture/diy/light1.JPG")
+  pushBtn("diyBtn10","picture/diy/light2.JPG")
+  pushBtn("diyBtn11","picture/diy/chair1.JPG")
+  pushBtn("diyBtn12","picture/diy/chair2.JPG")

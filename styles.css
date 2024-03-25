@@ -178,7 +178,6 @@ section {
     margin-bottom: 0px;
     padding-bottom: 0px;
     object-fit: cover;
-    opacity: 1;
 }
 
 .top-title {
@@ -356,6 +355,27 @@ section {
 }
 
 @keyframes fadeInMain {
+    0% {}
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fadeInSub {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    animation-name: fadeInSub;
+    animation-delay: 8s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+@keyframes fadeInSub {
     0% {}
 
     100% {
@@ -941,6 +961,11 @@ li.list {
     object-fit: cover;
     object-position: auto;
     padding: 10px;
+    transition: transform .6s ease;
+}
+
+#change-image-navigation img:hover {
+    transform: scale(1.2,1.2);
 }
 
 #contact ul {
