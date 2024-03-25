@@ -108,3 +108,22 @@ $(document).ready(function () {
 
   });
 });
+
+// Top画像の切り替え
+const pushBtn = (btn,src) => {
+  document.getElementById(btn).onclick = function(){
+
+
+      
+    document.getElementById("pics").src=src;
+
+    document.getElementById("pics").css('opacity','0.5');
+  }
+}
+
+pushBtn("btn1","picture/diy/bed2.jpg")
+pushBtn("btn2","picture/diy/light2.jpg")
+pushBtn("btn3","picture/diy/table1.jpg")
+pushBtn("btn4","picture/back/back3-1.jpg")
+pushBtn("btn5","picture/back/back4-1.jpg")
+pushBtn("btn6","picture/back/back5-1.jpg")

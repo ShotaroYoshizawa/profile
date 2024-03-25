@@ -186,7 +186,7 @@ section {
     position: absolute;
     background: rgba(255, 255, 255, 0.5);
     top: 50%;
-    left: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 0px;
 }
@@ -200,17 +200,23 @@ section {
 }
 
 .top-title h4 {
-   position: absolute;
-    width: 100%;
-    font-size: 70px;   
+    position: absolute;
+    left: 50%;
+    font-size: 70px;
     color: #0000cd;
     margin-top: auto;
+    margin-bottom: 0;
     letter-spacing: 1px;
     z-index: 1;
 }
 
+.top-title h4:hover{
+    color: #6495ed;
+    transition: 0.5s;
+}
+
 .top-title h3 {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 0;
     color: #444444;
@@ -218,12 +224,17 @@ section {
 
 .top-title h5 {
     position: absolute;
-    width: 100%;
-    font-size: 30px;
+    left: 50%;
+    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 0;
     color: #0000cd;
     z-index: 1;
+}
+
+.top-title h5:hover{
+    color: #6495ed;
+    transition: 0.5s;
 }
 
 /* フェードイン↓ */
@@ -232,16 +243,15 @@ section {
     animation-delay: 1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateY(-80px);
+    transform: translate(-98px,-80px);
     opacity: 0;
-
-    left: -77px;
 }
+
 @keyframes fadeIn1 {
-    0% {
-    }
+    0% {}
+
     100% {
-        transform: translateY(0);
+        transform: translate(-98px,0);
         opacity: 1;
     }
 }
@@ -251,16 +261,15 @@ section {
     animation-delay: 2.1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateY(-80px);
+    transform: translate(20px,-80px);
     opacity: 0;
-
-    left: 42px;
 }
+
 @keyframes fadeIn2 {
-    0% {
-    }
+    0% {}
+
     100% {
-        transform: translateY(0);
+        transform: translate(20px,0);
         opacity: 1;
     }
 }
@@ -270,16 +279,15 @@ section {
     animation-delay: 3.1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateY(-80px);
+    transform: translate(100px,-80px);
     opacity: 0;
-
-    left: 126px;
 }
+
 @keyframes fadeIn3 {
-    0% {
-    }
+    0% {}
+
     100% {
-        transform: translateY(0);
+        transform: translate(100px,0);
         opacity: 1;
     }
 }
@@ -289,16 +297,15 @@ section {
     animation-delay: 4.4s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateY(-40px);
+    transform: translate(-114px,-40px);
     opacity: 0;
-
-    left: -89px;
 }
+
 @keyframes fadeIn4 {
-    0% {
-    }
+    0% {}
+
     100% {
-        transform: translateY(0);
+        transform: translate(-114px,0);
         opacity: 1;
     }
 }
@@ -308,16 +315,15 @@ section {
     animation-delay: 4.8s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateY(-40px);
+    transform: translate(-50px,-40px);
     opacity: 0;
-
-    left: -32px;
 }
+
 @keyframes fadeIn5 {
-    0% {
-    }
+    0% {}
+
     100% {
-        transform: translateY(0);
+        transform: translate(-50px,0);
         opacity: 1;
     }
 }
@@ -327,16 +333,15 @@ section {
     animation-delay: 5.2s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateY(-40px);
+    transform: translate(1px,-40px);
     opacity: 0;
-
-    left: 10px;
 }
+
 @keyframes fadeIn6 {
-    0% {
-    }
+    0% {}
+
     100% {
-        transform: translateY(0);
+        transform: translate(0px,0);
         opacity: 1;
     }
 }
@@ -349,14 +354,16 @@ section {
     transform: translateY(-10px);
     opacity: 0;
 }
+
 @keyframes fadeInMain {
-    0% {
-    }
+    0% {}
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
 /* フェードイン↑ */
 
 .intro-title {
@@ -386,7 +393,6 @@ section {
     text-align: left;
     border-bottom: 1px solid gray;
     margin-top: 0;
-
 }
 
 .Intro-title img {
