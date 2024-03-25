@@ -201,15 +201,11 @@ section {
 
 .top-title h4 {
    position: absolute;
-
     width: 100%;
-    font-size: 70px;
-    font-weight: bold;    
-    
-    color: red;
+    font-size: 70px;   
+    color: #0000cd;
     margin-top: auto;
     letter-spacing: 1px;
-
     z-index: 1;
 }
 
@@ -222,13 +218,11 @@ section {
 
 .top-title h5 {
     position: absolute;
-
     width: 100%;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 0;
-    color: red;
-
+    color: #0000cd;
     z-index: 1;
 }
 
@@ -236,12 +230,12 @@ section {
 .fadeIn1 {
     animation-name: fadeIn1;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     transform: translateY(-80px);
     opacity: 0;
 
-    left: -79px;
+    left: -77px;
 }
 @keyframes fadeIn1 {
     0% {
@@ -254,8 +248,8 @@ section {
 
 .fadeIn2 {
     animation-name: fadeIn2;
-    animation-delay: 2s;
-    animation-duration: 2s;
+    animation-delay: 2.1s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     transform: translateY(-80px);
     opacity: 0;
@@ -273,8 +267,8 @@ section {
 
 .fadeIn3 {
     animation-name: fadeIn3;
-    animation-delay: 3s;
-    animation-duration: 2s;
+    animation-delay: 3.1s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     transform: translateY(-80px);
     opacity: 0;
@@ -336,7 +330,7 @@ section {
     transform: translateY(-40px);
     opacity: 0;
 
-    left: 12px;
+    left: 10px;
 }
 @keyframes fadeIn6 {
     0% {
@@ -350,7 +344,7 @@ section {
 .fadeInMain {
     animation-name: fadeInMain;
     animation-delay: 7s;
-    animation-duration: 1.0s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     transform: translateY(-10px);
     opacity: 0;
