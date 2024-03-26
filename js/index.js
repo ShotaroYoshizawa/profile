@@ -116,9 +116,9 @@ const pushBtn = (btn, src) => {
   }
 }
 
-pushBtn("btn1", "picture/diy/bed2.jpg")
-pushBtn("btn2", "picture/diy/light2.jpg")
-pushBtn("btn3", "picture/diy/table1.jpg")
-pushBtn("btn4", "picture/back/back3-1.jpg")
-pushBtn("btn5", "picture/back/back4-1.jpg")
-pushBtn("btn6", "picture/back/back5-1.jpg")
+pushBtn("btn1", "picture\diy\bed2.jpg")
+pushBtn("btn2", "picture\diy\light2.jpg")
+pushBtn("btn3", "picture\diy\table1.jpg")
+pushBtn("btn4", "picture\back\back3-1.jpg")
+pushBtn("btn5", "picture\back\back4-1.jpg")
+pushBtn("btn6", "picture\back\back5-1.jpg")
