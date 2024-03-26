@@ -110,15 +110,16 @@ $(document).ready(function () {
 });
 
 // Top画像の切り替え
-const pushBtn = (btn, src) => {
+const pushBtn = (btn, src,message) => {
   document.getElementById(btn).onclick = function () {
     document.getElementById("pics").src = src;
+    document.getElementById("click").innerHTML = message;
   }
 }
 
-pushBtn("btn1", "picture/diy/bed2.JPG")
-pushBtn("btn2", "picture/diy/light2.JPG")
-pushBtn("btn3", "picture/diy/table1.JPG")
-pushBtn("btn4", "picture/back/back3-1.jpg")
-pushBtn("btn5", "picture/back/back4-1.jpg")
-pushBtn("btn6", "picture/back/back5-1.jpg")
+pushBtn("btn1", "picture/diy/bed2.JPG","《DIY紹介》ソファベッド：レイアウトに合わせてソファとベッドに切り替え可能")
+pushBtn("btn2", "picture/diy/light2.JPG","《DIY紹介》間接照明：麻の紐を球状に固めて作成")
+pushBtn("btn3", "picture/diy/table1.JPG","《DIY紹介》ハイ&ローテーブル：脚を組み替えて高さを2段階に切り替え可能")
+pushBtn("btn4", "picture/back/back3-1.jpg",'△ Click "o" △')
+pushBtn("btn5", "picture/back/back4-1.jpg",'△ Click "o" △')
+pushBtn("btn6", "picture/back/back01.jpg",'△ Click "o" △')

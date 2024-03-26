@@ -169,7 +169,6 @@ section {
 .top-pic {
     position: relative;
     background-color: #333333;
-    padding-bottom: 40px;
 }
 
 .top-pic img {
@@ -178,6 +177,11 @@ section {
     margin-bottom: 0px;
     padding-bottom: 0px;
     object-fit: cover;
+}
+
+.top-sub{
+    background-color: #333333;
+    height: 40px;
 }
 
 .top-title {
@@ -364,8 +368,9 @@ section {
 }
 
 .fadeInSub {
+    color: #cdcdcd;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
     animation-name: fadeInSub;
     animation-delay: 8s;
