@@ -186,7 +186,8 @@ section {
 
 .top-sub {
     background-color: #333333;
-    height: 40px;
+    padding-top: 0;
+    padding-bottom: 10px;
 }
 
 .top-title {
@@ -997,7 +998,7 @@ li.list {
     text-align: left;
 }
 
-ul.listCover{
+ul.listCover {
     padding-left: 0;
 }
 
@@ -1022,6 +1023,26 @@ ul.listCover{
 .expandField .selfRep {
     display: block;
 }
+
+
+
+.act-pic {
+    position: relative;
+}
+
+.act-pic::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    border: 6px solid transparent;
+    border-top: 7px solid black;   /* 好みで色を変えてください */  
+    z-index: 1;
+}
+
+
+
+
 .expandField {
     width: 100%;
     text-align: left;
@@ -1063,15 +1084,15 @@ ul.listCover{
     color: #fff;
 }
 
-.expandField .selfRepInner .secRight h4{
+.expandField .selfRepInner .secRight h4 {
     margin: 5px 0 0 10px;
 }
 
-.expandField .selfRepInner .secRight ul{
+.expandField .selfRepInner .secRight ul {
     padding: 0 10px 10px 10px;
 }
 
-.expandField .selfRepInner .secRight li{
+.expandField .selfRepInner .secRight li {
     list-style: none;
     font-size: 12px;
 }
