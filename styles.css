@@ -61,11 +61,16 @@ header h1 {
     margin: 0 auto 0 auto;
 }
 
+@media(max-width:750px) {
+    header h1 {
+        display: none;
+    }
+}
+
 header a {
     color: #fff;
     text-decoration: none;
 }
-
 
 /*subnav用↓*/
 .gnavi__lists {
@@ -179,7 +184,7 @@ section {
     object-fit: cover;
 }
 
-.top-sub{
+.top-sub {
     background-color: #333333;
     height: 40px;
 }
@@ -213,7 +218,7 @@ section {
     z-index: 1;
 }
 
-.top-title h4:hover{
+.top-title h4:hover {
     color: #6495ed;
     transition: 0.5s;
 }
@@ -235,7 +240,7 @@ section {
     z-index: 1;
 }
 
-.top-title h5:hover{
+.top-title h5:hover {
     color: #6495ed;
     transition: 0.5s;
 }
@@ -246,7 +251,7 @@ section {
     animation-delay: 1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translate(-98px,-80px);
+    transform: translate(-98px, -80px);
     opacity: 0;
 }
 
@@ -254,7 +259,7 @@ section {
     0% {}
 
     100% {
-        transform: translate(-98px,0);
+        transform: translate(-98px, 0);
         opacity: 1;
     }
 }
@@ -264,7 +269,7 @@ section {
     animation-delay: 2.1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translate(20px,-80px);
+    transform: translate(20px, -80px);
     opacity: 0;
 }
 
@@ -272,7 +277,7 @@ section {
     0% {}
 
     100% {
-        transform: translate(20px,0);
+        transform: translate(20px, 0);
         opacity: 1;
     }
 }
@@ -282,7 +287,7 @@ section {
     animation-delay: 3.1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translate(100px,-80px);
+    transform: translate(100px, -80px);
     opacity: 0;
 }
 
@@ -290,7 +295,7 @@ section {
     0% {}
 
     100% {
-        transform: translate(100px,0);
+        transform: translate(100px, 0);
         opacity: 1;
     }
 }
@@ -300,7 +305,7 @@ section {
     animation-delay: 4.4s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translate(-114px,-40px);
+    transform: translate(-114px, -40px);
     opacity: 0;
 }
 
@@ -308,7 +313,7 @@ section {
     0% {}
 
     100% {
-        transform: translate(-114px,0);
+        transform: translate(-114px, 0);
         opacity: 1;
     }
 }
@@ -318,7 +323,7 @@ section {
     animation-delay: 4.8s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translate(-50px,-40px);
+    transform: translate(-50px, -40px);
     opacity: 0;
 }
 
@@ -326,7 +331,7 @@ section {
     0% {}
 
     100% {
-        transform: translate(-50px,0);
+        transform: translate(-50px, 0);
         opacity: 1;
     }
 }
@@ -336,7 +341,7 @@ section {
     animation-delay: 5.2s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translate(1px,-40px);
+    transform: translate(1px, -40px);
     opacity: 0;
 }
 
@@ -344,7 +349,7 @@ section {
     0% {}
 
     100% {
-        transform: translate(0px,0);
+        transform: translate(0px, 0);
         opacity: 1;
     }
 }
@@ -951,6 +956,11 @@ li.list {
     margin: 10px auto;
 }
 
+.diy-text {
+    width: 100%;
+    display: none;
+}
+
 #change-image-navigation {
     display: flex;
     justify-content: center;
@@ -963,17 +973,131 @@ li.list {
 }
 
 #change-image-navigation img {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     object-position: auto;
-    padding: 5px 5px 0 0;
-    transition: transform .6s ease;
+    padding: 10px 10px 0 0;
+    transition: transform .4s ease;
 }
 
 #change-image-navigation img:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.1, 1.1);
 }
+
+#diy-content div {
+    width: 100%;
+    display: none;
+
+}
+
+/*↓画像一覧*/
+.listCover {
+    margin: 0 auto;
+    text-align: left;
+}
+
+ul.listCover{
+    padding-left: 0;
+}
+
+.listCover .listItem {
+    text-align: center;
+    display: inline;
+    cursor: pointer;
+}
+
+.listItemPic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: auto;
+    padding: 10px;
+}
+
+.listCover .listItem .selfRep {
+    display: none;
+}
+
+.expandField .selfRep {
+    display: block;
+}
+.expandField {
+    width: 100%;
+    text-align: left;
+    display: block;
+    background: #222;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.expandField img {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: auto;
+    margin: 10px;
+}
+
+.expandField .selfRepInner {
+    text-align: center;
+    position: relative;
+}
+
+.expandField .selfRepInner .secLeft,
+.expandField .selfRepInner .secRight {
+    width: 50%;
+    float: left;
+}
+
+.expandField .selfRepInner .secLeft {
+    text-align: center;
+}
+
+.expandField .selfRepInner .secRight {
+    text-align: left;
+    color: #fff;
+}
+
+.expandField .selfRepInner .secRight h4{
+    margin: 5px 0 0 10px;
+}
+
+.expandField .selfRepInner .secRight ul{
+    padding: 0 10px 10px 10px;
+}
+
+.expandField .selfRepInner .secRight li{
+    list-style: none;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .expandField .selfRepInner .secLeft img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .expandField .selfRepInner .secLeft {
+        display: none;
+    }
+
+    .expandField .selfRepInner .secRight {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+
+/*↑画像一覧*/
 
 .diy-title a {
     /*text-decoration: none;*/
