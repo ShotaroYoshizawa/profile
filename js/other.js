@@ -55,3 +55,31 @@ pushBtn("diyBtn10", "picture/diy/light2.jpg")
 pushBtn("diyBtn11", "picture/diy/chair1.jpg")
 pushBtn("diyBtn12", "picture/diy/chair2.jpg")
 
+
+
+
+var btn = document.getElementsByClassName('listItem');
+
+// ボタンの個数分ループ
+// 変数「i」に現在のループ回数が代入される
+for (var i = btn.length - 1; i >= 0; i--) {
+  btnAction(btn[i], i);
+}
+
+function btnAction(btnDOM, btnId) {
+  // 各ボタンをイベントリスナーに登録
+  btnDOM.addEventListener("click", function () {
+    // activeクラスの追加と削除
+    // thisは、クリックされたオブジェクト
+    this.classList.toggle('act-pic');
+
+    // クリックされていないボタンにactiveがついていたら外す
+    for (var i = btn.length - 1; i >= 0; i--) {
+      if (btnId !== i) {
+        if (btn[i].classList.contains('act-pic')) {
+          btn[i].classList.remove('act-pic');
+        }
+      }
+    }
+  })
+}

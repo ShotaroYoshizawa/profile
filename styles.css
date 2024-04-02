@@ -1016,32 +1016,19 @@ ul.listCover {
     padding: 10px;
 }
 
-.listCover .listItem .selfRep {
+.listItem div {
     display: none;
 }
 
-.expandField .selfRep {
+.act-pic div {
     display: block;
 }
 
-
-
-.act-pic {
+.act-pic img {
     position: relative;
+    padding: 10px;
+    background: #222;
 }
-
-.act-pic::before{
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    border: 6px solid transparent;
-    border-top: 7px solid black;   /* 好みで色を変えてください */  
-    z-index: 1;
-}
-
-
-
 
 .expandField {
     width: 100%;
@@ -1061,7 +1048,7 @@ ul.listCover {
     max-width: 90%;
     object-fit: cover;
     object-position: auto;
-    margin: 10px;
+    padding: 10px;
 }
 
 .expandField .selfRepInner {
@@ -1115,14 +1102,10 @@ ul.listCover {
     }
 }
 
-
-
-
 /*↑画像一覧*/
 
-.diy-title a {
-    /*text-decoration: none;*/
-
+.other-content-list{
+    width: 100%;
 }
 
 #contact ul {
