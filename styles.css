@@ -938,58 +938,9 @@ li.list {
 
 /* スキル　タブメニュー↑ */
 
-.other-content img {
-    width: 40%;
-    margin: 10px;
-}
-
-#change-image-box {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-}
-
-#change-image-box img {
-    max-height: 300px;
-    max-width: 90%;
-    object-fit: cover;
-    object-position: auto;
-    margin: 10px auto;
-}
-
-.diy-text {
+.other-content-list{
     width: 100%;
-    display: none;
-}
-
-#change-image-navigation {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-}
-
-#change-image-navigation li {
-    list-style: none;
-}
-
-#change-image-navigation img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    object-position: auto;
-    padding: 10px 10px 0 0;
-    transition: transform .4s ease;
-}
-
-#change-image-navigation img:hover {
-    transform: scale(1.1, 1.1);
-}
-
-#diy-content div {
-    width: 100%;
-    display: none;
-
+    margin: auto;
 }
 
 /*↓画像一覧*/
@@ -1015,6 +966,12 @@ ul.listCover {
     object-position: auto;
     padding: 10px;
 }
+
+.listItemPic:hover{
+    padding: 10px;
+    background: #cdcdcd;
+}
+
 
 .listItem div {
     display: none;
@@ -1104,9 +1061,14 @@ ul.listCover {
 
 /*↑画像一覧*/
 
-.other-content-list{
-    width: 100%;
+.other-content h4 {
+    margin-bottom: 5px;
 }
+
+.other-content p {
+    margin: 5px;
+}
+
 
 #contact ul {
     list-style: none;
